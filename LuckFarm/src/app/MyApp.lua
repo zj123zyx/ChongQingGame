@@ -33,7 +33,7 @@ function MyApp:run()
     -- end
     self:preStart()
     -- ScnMgr.replaceScene("MainScene")
-    ScnMgr.replaceScene("TestScene")--NetTestScene
+    ScnMgr.replaceScene("NetTestScene")--NetTestScene
 
 end
 
