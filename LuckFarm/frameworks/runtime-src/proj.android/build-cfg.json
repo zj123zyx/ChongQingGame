@@ -1,0 +1,38 @@
+{
+    "ndk_module_path" :[
+        "../Classes",
+        "../../cocos2d-x",
+        "../../cocos2d-x/cocos/",
+        "../../cocos2d-x/external",
+        "../../cocos2d-x/cocos/scripting",
+        "../../cocos2d-x/cocos/quick_libs"
+    ],
+    "copy_resources": [
+        {
+            "from": "../../../src",
+            "to": "src"
+        },
+        {
+            "from": "../../../res",
+            "to": "res"
+        },
+        {
+            "from": "../../../frameworks/luaprotobuf/protobuf",
+            "to": "src"
+        },
+        {
+            "from": "../../../scripts.zip",
+            "to": ""
+        },
+        {
+            "from": "../../../CustomConfig.properties",
+            "to": ""
+        }
+    ],
+    "must_copy_resources": [
+        {
+            "from": "../../../config.json",
+            "to": ""
+        }
+    ]
+}

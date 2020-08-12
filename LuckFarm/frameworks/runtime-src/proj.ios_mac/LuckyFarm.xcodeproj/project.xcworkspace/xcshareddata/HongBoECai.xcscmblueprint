@@ -1,0 +1,26 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2780071c-ecc2-11e3-9293-c1c6c2ea2059++3602" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2780071c-ecc2-11e3-9293-c1c6c2ea2059++3602" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8A3FBC88-06FD-44E4-BC45-1A8EB605BDD0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2780071c-ecc2-11e3-9293-c1c6c2ea2059++3602" : "HongBoECai\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HongBoECai",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "frameworks\/runtime-src\/proj.ios_mac\/HongBoECai.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.121:8090\/svn\/client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2780071c-ecc2-11e3-9293-c1c6c2ea2059++3602"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2780071c-ecc2-11e3-9293-c1c6c2ea2059++505",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2780071c-ecc2-11e3-9293-c1c6c2ea2059++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2780071c-ecc2-11e3-9293-c1c6c2ea2059++505" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7608C572-82BB-486F-B341-4AE55BEB5E78",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2780071c-ecc2-11e3-9293-c1c6c2ea2059++505" : "trunk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CasinoGameNew",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HongBoECai\/frameworks\/runtime-src\/proj.ios_mac\/CasinoGameNew.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/junwei.wang@192.168.1.121:8090\/svn\/client",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2780071c-ecc2-11e3-9293-c1c6c2ea2059++505"
+    }
+  ]
+}

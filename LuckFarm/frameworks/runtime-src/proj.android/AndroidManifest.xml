@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.genlot.luckyfram"
+      
+      android:versionCode="1610131439"
+      android:versionName="2.2.6"
+      android:installLocation="auto">
+
+
+    <uses-sdk android:minSdkVersion="9"/>
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--jpush-->
+    <permission
+        android:name="com.genlot.xingyunjianshou.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--申请权限 ?-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <!--new for jpush-->
+    <uses-permission android:name="com.genlot.xingyunjianshou.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!--LLYT 申请权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon">
+					 
+        <!-- Tell Cocos2dxActivity the name of our .so -->
+        <meta-data android:name="android.app.lib_name"
+                  android:value="cocos2dlua" />
+        
+<!--         <activity android:name="com.genlot.xingyunjianshou.PreLoadActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            
+        </activity> -->
+        
+        <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
+        <activity android:name="org.cocos2dx.lua.AppActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" /> 
+            </intent-filter>
+        </activity>
+        
+        <!-- QQ配置 -->
+        <!-- <activity
+   			android:name="com.tencent.tauth.AuthActivity"
+   			android:noHistory="true"
+   			android:launchMode="singleTask" >
+			<intent-filter>
+	    		<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+	    		<data android:scheme="tencent1105599422" />
+			</intent-filter>
+		</activity> -->
+
+		<!-- <activity android:name="com.tencent.connect.common.AssistActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|screenSize" 
+		/> -->
+		
+		<!-- 微信配置 -->
+		<!-- <activity   
+            android:name="com.genlot.xingyunjianshou.wxapi.WXEntryActivity"  
+            android:exported="true"  
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name"
+         /> -->
+
+     <!-- Rich push 核心功能 since 2.0.6-->
+        <!-- <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity> -->
+
+        <!-- Required SDK核心功能-->
+        <!-- <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.genlot.xingyunjianshou" />
+            </intent-filter>
+        </activity> -->
+        <!-- Required  SDK核心功能-->
+        <!-- <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service> -->
+    
+        
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <!-- <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service> -->
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <!-- <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.genlot.xingyunjianshou" />
+            </intent-filter>
+
+        </service> -->
+        
+        <!-- Required SDK核心功能-->
+        <!-- <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+             <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   Required  显示通知栏
+                <category android:name="com.genlot.xingyunjianshou" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+             Optional
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+   
+        </receiver> -->
+        
+        <!-- Required SDK核心功能-->
+        <!-- <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/> -->
+        
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <!-- <receiver
+            android:name="com.genlot.xingyunjianshou.receivers.MyReceiver"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> Required  用户注册SDK的intent
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> Required  用户接收SDK消息的intent
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> Required  用户接收SDK通知栏信息的intent
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> Required  用户打开自定义通知栏的intent
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> Optional 用户接受Rich Push Javascript 回调函数的intent
+                <action android:name="cn.jpush.android.intent.CONNECTION" />接收网络变化 连接/断开 since 1.6.3
+                <category android:name="com.genlot.xingyunjianshou" />
+            </intent-filter>
+        </receiver> -->
+ 
+        
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <!-- <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="3a237a76be57bf02a5d7cd99" /> --> <!--  </>值来自开发者平台取得的AppKey-->
+
+
+        <!-- LLYT SDK START -->
+        <!-- <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity> -->
+
+        <!-- <service
+            android:name="com.yintong.secure.service.PayService"
+           >
+        </service> -->
+        <!-- LLYT SDK END -->
+
+
+    </application>
+
+    <supports-screens android:anyDensity="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>  
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+ 	<uses-permission android:name="com.android.vending.BILLING" />
+ 	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+  
+</manifest> 

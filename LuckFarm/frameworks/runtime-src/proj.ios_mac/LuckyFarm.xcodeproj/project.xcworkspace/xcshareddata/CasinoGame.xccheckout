@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5255043-D129-4D84-BA92-9578819BE294</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CasinoGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2780071c-ecc2-11e3-9293-c1c6c2ea2059++4138</key>
+		<string>http://192.168.1.121:8090/svn/client/trunk/CasinoGame</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>frameworks/runtime-src/proj.ios_mac/CasinoGame.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2780071c-ecc2-11e3-9293-c1c6c2ea2059++4138</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>2780071c-ecc2-11e3-9293-c1c6c2ea2059++4138</key>
+		<string>http://192.168.1.121:8090/svn/client</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.1.121:8090/svn/client/trunk/CasinoGame/frameworks/runtime-src/proj.ios_mac/CasinoGame.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2780071c-ecc2-11e3-9293-c1c6c2ea2059++4138</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2780071c-ecc2-11e3-9293-c1c6c2ea2059++4138</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CasinoGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>
