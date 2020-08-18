@@ -46,16 +46,16 @@ function SocketNet:ConnectServer()
     -- local socket_port = cc.UserDefault:getInstance():getStringForKey("socket_port")
 
 
-    -- socket_addr = "202.105.127.10"
-    socket_port = "47360"
-    -- socket_port = "47360"
-    --10.8.0.104:47360
-    --202.105.127.10:47360
+    -- socket_addr = "10.37.0.209"
+    socket_port = "21001"
+    -- socket_port = "21001"
+    --10.8.0.104:21001
+    --10.37.0.209:21001
 
     if socket_addr and  string.len(socket_addr) < 16 and  string.len(socket_addr) >= 7 then
         print("socket_addr is right!!!")
     else
-        socket_addr = "202.105.127.10"
+        socket_addr = "10.37.0.209"
         -- socket_addr = "192.168.0.188"
     end
 

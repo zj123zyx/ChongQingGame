@@ -1,3 +1,11 @@
+--[[
+Descripttion: nothing
+version: V1.0.0
+Author: chenfang
+Date: 2020-08-14 09:26:39
+LastEditors: chenfang
+LastEditTime: 2020-08-17 14:59:15
+--]]
 require("config")
 require("cocos.init")
 require("framework.init")
@@ -11,7 +19,7 @@ local MyApp = class("MyApp", cc.mvc.AppBase)
 
 function MyApp:ctor()
     MyApp.super.ctor(self)
-    -- core.SocketNet:init()
+    core.sktMgr.init()
     -- self:init()
 end
 
@@ -47,6 +55,7 @@ function MyApp:preStart()
         ScnMgr.show()
         
     end
+    
     self.schedulerEntry = cc.Director:getInstance():getScheduler():scheduleScriptFunc(onTick, 0, false)
     -- Notification.registNotification()
 

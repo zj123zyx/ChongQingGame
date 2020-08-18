@@ -21,6 +21,9 @@ core.displayEX = import(".displayEX")
 -- core.Sqlite = require("app.core.Sqlite")
 core.Waiting = require("app.core.Waiting")
 ToolUtils = require("app.core.ToolUtils")
+core.SocketNet = require("app.core.network.SocketNet").new()
+core.sktMgr = require("app.core.SocketManager")
+
 --core.FBPlatform = require("app.core.FBPlatform")
 
 
